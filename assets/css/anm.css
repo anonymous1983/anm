@@ -1,0 +1,108 @@
+.navbar.horizonatal-menu {
+    border: 0;
+}
+
+.navbar .navbar-logo {
+    padding: 0 40px 0 20px;
+}
+
+.btn-offre-premium {
+
+}
+
+.navbar .navbar-logo {
+    /*padding: 0 80px 0 20px;*/
+    /*background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.navbar .navbar-logo .logo {
+    height: 42px;
+    margin: 4px;
+}
+
+.bs-callout {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.carousel-logos .thumbnail {
+    margin-bottom: 0;
+}
+.carousel-logos .thumbnail img{
+    max-height: 30px;
+}
+
+.carousel-logos .carousel-control {
+    width: 40px;
+    background-image: none;
+}
+
+.carousel-logos .carousel-control .fa {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.circles {
+    margin-bottom: -10px;
+    width: 402px;
+    margin: 0 auto;
+
+}
+
+.circle {
+    width: 112px;
+    margin: 6px 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle canvas {
+    vertical-align: top;
+}
+
+.circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
