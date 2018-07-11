@@ -336,10 +336,135 @@
                                     </div>
                                 </div>
 
-                                
-
                                 <div class="clearfix text-right">
                                     <a href="#" class=" m-r-1 btn btn-link">Recherche avancée <i class="fa fa-angle-double-right m-l-1"></i></a>
+                                </div>
+
+                                <div class="form-horizontal" id="advanced-search">
+                                    <div class="form-group form-group-sm hide-agent">
+                                        <div class="line formulaire-inline">
+                                            <label class="control-label col-md-2" for="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch">
+                                                <div class="row">Recherche par mots clés</div>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10 formulaire-inline">
+                                            <input name="ctl0$CONTENU_PAGE$AdvancedSearch$keywordSearch" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch" class="form-control long" placeholder="Dans la référence, l'intitulé ou l'objet de la consultation">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-sm">
+
+                                        <div class="clearfix">
+                                            <!-- BEGIN ROW REFERENCE-->
+                                            <div class="col-md-12 m-b-1">
+                                                <div class="row line">
+                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_reference">
+                                                        <div class="row">Référence</div>
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                        <input name="ctl0$CONTENU_PAGE$AdvancedSearch$reference" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_reference" class="form-control long">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- END ROW REFERENCE-->
+
+                                            <!-- BEGIN ROW TYPE D'ANNONCE-->
+                                            <div class="col-md-12 m-b-1" >
+                                                <div class="row line">
+                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType">
+                                                        <div class="row">Type d'annonce</div>
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$annonceType" id="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType" disabled="disabled" class="form-control long">
+                                                            <option value="0">--- Tous les types d'annonce ---</option>
+                                                            <option value="2">Annonce d'information</option>
+                                                            <option selected="selected" value="3">Annonce de consultation</option>
+                                                            <option value="4">Annonce d'attribution</option>
+                                                            <option value="8">Annonce de décision de résiliation</option>
+                                                            <option value="9">Projet d'achat</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END ROW TYPE D'ANNONCE-->
+
+                                            <!-- BEGIN ROW TYPE PROCEDURE-->
+                                            <div class="col-md-12 m-b-1" >
+                                                <div class="row line">
+                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType">
+                                                        <div class="row">Type de procédure</div>
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$procedureType" id="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType" class="form-control long">
+                                                            <option value="0">--- Tous les types de procédure ---</option>
+                                                            <option value="30">Accord-Cadre - 1 Sélection des Attributaires (obsolète)</option>
+                                                            <option value="1">Appel d'offres ouvert</option>
+                                                            <option value="2">Appel d'offres restreint</option>
+                                                            <option value="4">Concours ouvert</option>
+                                                            <option value="5">Concours restreint</option>
+                                                            <option value="7">Dialogue compétitif</option>
+                                                            <option value="8">Marché négocié</option>
+                                                            <option value="3">Procédure adaptée</option>
+                                                            <option value="15">Procédure autre</option>
+                                                            <option value="1000">Procédure concurrentielle avec négociations</option>
+                                                            <option value="33">Procédure de passation des marchés spécifiques</option>
+                                                            <option value="31">Procédure de passation des marchés subséquents</option>
+                                                            <option value="32">Système d'Acquisition Dynamique</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END ROW TYPE PROCEDURE-->
+
+                                            <!-- BEGIN ROW CATEGORIE PRINCIPALE-->
+                                            <div class="col-md-12 m-b-1">
+                                                <div class="row line">
+                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_categorie">
+                                                        <div class="row">Catégorie principale</div>
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$categorie" id="ctl0_CONTENU_PAGE_AdvancedSearch_categorie" class="form-control long">
+                                                            <option value="0">--- Toutes les catégories ---</option>
+                                                            <option value="1">Travaux</option>
+                                                            <option value="2">Fournitures</option>
+                                                            <option value="3">Services</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END ROW CATEGORIE PRINCIPALE-->
+                                        </div>
+
+
+                                        <hr class="hide-agent">
+
+                                        <div class="clearfix">
+                                            <div class="col-md-12">
+                                                <div class="row line">
+                                                    <div class="hide intitule-150"><img class="float-left margin-right-5" src="https://atx2.local-trust.com/themes/images/picto-clause-sociale.gif" alt="clause sociale">
+                                                        <label>
+                                                            Dispositions sociales
+                                                        </label> :
+                                                    </div>
+                                                    <label class="control-label col-md-2 hide-agent" for="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales">
+                                                        <div class="row">
+                                                            <i class="s s-social s-18 m-r-1"></i>
+                                                            Dispositions sociales
+                                                        </div>
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$clauseSociales" id="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales" class="form-control small-150">
+                                                            <option value="0">Indifférent</option>
+                                                            <option value="1">Oui</option>
+                                                            <option value="2">Non</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                             </form>
