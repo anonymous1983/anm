@@ -50,7 +50,8 @@
 .carousel-logos .thumbnail {
     margin-bottom: 0;
 }
-.carousel-logos .thumbnail img{
+
+.carousel-logos .thumbnail img {
     max-height: 30px;
 }
 
@@ -69,10 +70,57 @@
     margin-bottom: -10px;
     width: 402px;
     margin: 0 auto;
-
+    position: relative;
 }
 
-.circle {
+.circles .title-circle {
+    position: absolute;
+    left: -122px;
+    top: 6px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    width: 102px;
+    height: 102px;
+    text-align: center;
+    z-index: 6;
+}
+
+.circles .title-circle .month {
+    height: 32px;
+    background-color: #1676e2;
+    color: #ffffff;
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.circles .title-circle .month:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    height: 1px;
+    border-top: 1px dashed rgba(255, 255, 255, .5);
+    width: 96%;
+    left: 2%;
+}
+
+.circles .title-circle .day {
+    font-size: 30px;
+    line-height: 44px;
+    color: #2f2f2f;
+    font-weight: bolder;
+}
+
+.circles .title-circle .year {
+    line-height: 20px;
+    color: #1676e2;
+    font-size: 13px;
+}
+
+.circles .circle {
     width: 112px;
     margin: 6px 10px 20px;
     display: inline-block;
@@ -81,11 +129,11 @@
     line-height: 1.2;
 }
 
-.circle canvas {
+.circles .circle canvas {
     vertical-align: top;
 }
 
-.circle strong {
+.circles .circle strong {
     position: absolute;
     top: 30px;
     left: 0;
@@ -95,14 +143,30 @@
     font-size: 30px;
 }
 
-.circle strong i {
+.circles .circle strong i {
     font-style: normal;
     font-size: 0.6em;
     font-weight: normal;
 }
 
-.circle span {
+.circles .circle span {
     display: block;
     color: #aaa;
     margin-top: 12px;
+}
+
+
+.date.date-w70{
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.stats .stats-date .text,
+.stats .stats-date .month,
+.stats .stats-date .day,
+.stats .stats-date .year{
+    float: left;
+    padding: 5px;
 }

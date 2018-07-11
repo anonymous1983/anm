@@ -1,5 +1,8 @@
 (function ($) {
 
+
+    $('[data-toggle="tooltip"]').tooltip();
+
     $('.circle').each(function () {
         var $circle = $(this);
         $circle.circleProgress().on('circle-animation-progress', function (event, progress) {
