@@ -11,4 +11,20 @@
     });
 
 
+        $('#numberDematSimple').animateNumber(
+            {number: 100},
+            1000
+            );
+        $('#numberMarchePublicFranceAnnee').animateNumber(
+            {number: 200000},
+            1000,
+            function() {
+                $('#numberMarchePublicFranceAnnee').text('200 000')
+            }
+
+            );
+
+
+
+
 })(jQuery);

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>ANM</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="assets/css/ng-style.css" rel="stylesheet">
@@ -79,249 +80,279 @@
         </nav>
     </div>
     <main id="middle" class="clear-top atx-middle" role="main">
+        <div class="hero m-b-2">
+            <div class="container-fluid">
+                <div class="hero-header">
+                    <div class="m-b-2 text-center title" role="alert">
+                        <div class="m-b-0">Tous les marchés publics rassemblés en un lieu unique - Recherche - Favoris - Alertes</div>
+                    </div>
+                </div>
+
+                <div class="hero-footer text-center clearfix">
+
+                    <div class="col-md-4 col-md-offset-2">
+                        <div class="pull-right p-r-4">
+                            <span class="title m-b-1">
+                                <span id="numberDematSimple">0</span>%
+                            </span>
+                            <br>
+                            <span class="description">
+                                DEMAT & SIMPLE
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="    border-left: .1rem solid #dbdbdb;">
+                        <div class="pull-left p-l-4">
+                        <span class="title m-b-1">
+                            +<span id="numberMarchePublicFranceAnnee">0</span>
+                        </span>
+                        <br>
+                        <span class="description">
+                            marchés publics en France chaque année
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="clearfix">
-                <div class="alert alert-info m-b-1" role="alert">
-                    <h4 class="m-b-0">Tous les marchés publics rassemblés en un lieu unique - Recherche - Favoris - Alertes - 100% DEMAT - 100% SIMPLE !</h4>
-                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel carousel-logos slide m-b-1" id="carousellogos">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/aws.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/maximilien.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/aws.png" alt="Image">
+                                            </a>
+                                        </div>
 
-                <div class="bs-callout bs-callout-success text-success">
-                    Plus de 200 000 marchés publics en France chaque année - Retrouvez les tous ici, collectés depuis toutes les plateformes !
-                </div>
+                                    </div><!--.row-->
+                                </div><!--.item-->
 
-                <div class="clearfix">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="carousel carousel-logos slide m-b-1" id="carousellogos">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/aws.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/maximilien.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/aws.png" alt="Image">
-                                                </a>
-                                            </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                    </div><!--.row-->
+                                </div><!--.item-->
 
-                                        </div><!--.row-->
-                                    </div><!--.item-->
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/achat_public.png" alt="Image">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4 col-md-2">
+                                            <a href="#" class="thumbnail text-center">
+                                                <img src="media/logo/republique_francaise.png" alt="Image">
+                                            </a>
+                                        </div>
+                                    </div><!--.row-->
+                                </div><!--.item-->
 
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div><!--.row-->
-                                    </div><!--.item-->
-
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/achat_public.png" alt="Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-2">
-                                                <a href="#" class="thumbnail text-center">
-                                                    <img src="media/logo/republique_francaise.png" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div><!--.row-->
-                                    </div><!--.item-->
-
-                                </div>
-                                <a class="left carousel-control" href="#carousellogos" data-slide="prev"><i class="fa fa-2x fa-angle-left text-primary"></i></a>
-                                <a class="right carousel-control" href="#carousellogos" data-slide="next"><i class="fa fa-2x fa-angle-right text-primary"></i></a>
                             </div>
+                            <a class="left carousel-control" href="#carousellogos" data-slide="prev"><i class="fa fa-2x fa-angle-left text-primary"></i></a>
+                            <a class="right carousel-control" href="#carousellogos" data-slide="next"><i class="fa fa-2x fa-angle-right text-primary"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="clearfix">
-                    <!-- Stat -->
+            <div class="clearfix">
+                <!-- Stat -->
 
-                    <div class="circles">
+                <div class="circles">
 
 
-                        <div class="title-circle">
-                            <div class="month">
-                                juin
-                            </div>
-                            <div class="day">
-                                21
-                            </div>
-                            <div class="year">
-                                2018
-                            </div>
+                    <div class="title-circle">
+                        <div class="month">
+                            juin
                         </div>
+                        <div class="day">
+                            21
+                        </div>
+                        <div class="year">
+                            2018
+                        </div>
+                    </div>
 
-                        <div class="circle"
-                             data-value="0.78"
-                             data-number="7862"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
+                    <div class="circle"
+                         data-value="0.78"
+                         data-number="7862"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
                                 &quot;gradient&quot;: &lsqb;&quot;#20E2D7&quot;, &quot;#F9FEA5&quot;&rsqb;
                              }">
-                            <strong></strong>
-                            <span>Consultations <br> en cours</span>
-                        </div>
-
-                        <div class="circle"
-                             data-value="0.46"
-                             data-number="468"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
-                                &quot;gradient&quot;: &lsqb;&quot;#0acffe&quot;, &quot;#495aff&quot;&rsqb;
-                             }">
-                            <strong></strong>
-                            <span>Nouvelles <br> consultations</span>
-                        </div>
-
-                        <div class="circle"
-                             data-value="0.68"
-                             data-number="682"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
-                                &quot;gradient&quot;: &lsqb;&quot;#fff000&quot;, &quot;#ff5f43&quot;&rsqb;
-                             }">
-                            <strong></strong>
-                            <span>Nouveaux avis BOAMP et JOUE</span>
-                        </div>
-
-
+                        <strong></strong>
+                        <span>Consultations <br> en cours</span>
                     </div>
 
-                    <!--
-                    <div class="stats">
-
-
-                        <div class="stats-date">
-                            <div class="text"> Aujourd'hui </div>
-                            <div class="month">
-                                juin
-                            </div>
-                            <div class="day">
-                                21
-                            </div>
-                            <div class="year">
-                                2018
-                            </div>
-                        </div>
-
-                        <div class="circle"
-                             data-value="0.78"
-                             data-number="7862"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
-                                &quot;gradient&quot;: &lsqb;&quot;#20E2D7&quot;, &quot;#F9FEA5&quot;&rsqb;
-                             }">
-                            <strong></strong>
-                            <span>Consultations <br> en cours</span>
-                        </div>
-
-                        <div class="circle"
-                             data-value="0.46"
-                             data-number="468"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
+                    <div class="circle"
+                         data-value="0.46"
+                         data-number="468"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
                                 &quot;gradient&quot;: &lsqb;&quot;#0acffe&quot;, &quot;#495aff&quot;&rsqb;
                              }">
-                            <strong></strong>
-                            <span>Nouvelles <br> consultations</span>
-                        </div>
+                        <strong></strong>
+                        <span>Nouvelles <br> consultations</span>
+                    </div>
 
-                        <div class="circle"
-                             data-value="0.68"
-                             data-number="682"
-                             data-size="100"
-                             data-thickness="8"
-                             data-fill="{
+                    <div class="circle"
+                         data-value="0.68"
+                         data-number="682"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
                                 &quot;gradient&quot;: &lsqb;&quot;#fff000&quot;, &quot;#ff5f43&quot;&rsqb;
                              }">
-                            <strong></strong>
-                            <span>Nouveaux avis BOAMP et JOUE</span>
-                        </div>
-
-
+                        <strong></strong>
+                        <span>Nouveaux avis BOAMP et JOUE</span>
                     </div>
-                    -->
+
+
                 </div>
+
+                <!--
+                <div class="stats">
+
+
+                    <div class="stats-date">
+                        <div class="text"> Aujourd'hui </div>
+                        <div class="month">
+                            juin
+                        </div>
+                        <div class="day">
+                            21
+                        </div>
+                        <div class="year">
+                            2018
+                        </div>
+                    </div>
+
+                    <div class="circle"
+                         data-value="0.78"
+                         data-number="7862"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
+                            &quot;gradient&quot;: &lsqb;&quot;#20E2D7&quot;, &quot;#F9FEA5&quot;&rsqb;
+                         }">
+                        <strong></strong>
+                        <span>Consultations <br> en cours</span>
+                    </div>
+
+                    <div class="circle"
+                         data-value="0.46"
+                         data-number="468"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
+                            &quot;gradient&quot;: &lsqb;&quot;#0acffe&quot;, &quot;#495aff&quot;&rsqb;
+                         }">
+                        <strong></strong>
+                        <span>Nouvelles <br> consultations</span>
+                    </div>
+
+                    <div class="circle"
+                         data-value="0.68"
+                         data-number="682"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
+                            &quot;gradient&quot;: &lsqb;&quot;#fff000&quot;, &quot;#ff5f43&quot;&rsqb;
+                         }">
+                        <strong></strong>
+                        <span>Nouveaux avis BOAMP et JOUE</span>
+                    </div>
+
+
+                </div>
+                -->
+            </div>
+            <div class="clearfix">
+
 
                 <div class="clearfix">
                     <div class="container">
@@ -340,135 +371,138 @@
                                     <a href="#" class=" m-r-1 btn btn-link">Recherche avancée <i class="fa fa-angle-double-right m-l-1"></i></a>
                                 </div>
 
-                                <div class="form-horizontal" id="advanced-search">
-                                    <div class="form-group form-group-sm hide-agent">
-                                        <div class="line formulaire-inline">
-                                            <label class="control-label col-md-2" for="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch">
-                                                <div class="row">Recherche par mots clés</div>
-                                            </label>
-                                        </div>
-                                        <div class="col-md-10 formulaire-inline">
-                                            <input name="ctl0$CONTENU_PAGE$AdvancedSearch$keywordSearch" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch" class="form-control long" placeholder="Dans la référence, l'intitulé ou l'objet de la consultation">
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-group-sm">
 
-                                        <div class="clearfix">
-                                            <!-- BEGIN ROW REFERENCE-->
-                                            <div class="col-md-12 m-b-1">
-                                                <div class="row line">
-                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_reference">
-                                                        <div class="row">Référence</div>
+                                <div class="panel panel-default tab-pane fade in active">
+                                    <div class="panel-body ">
+                                        <div class="form-horizontal" id="advanced-search">
+                                            <div class="form-group form-group-sm hide-agent">
+                                                <div class="line formulaire-inline">
+                                                    <label class="control-label col-md-2" for="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch">
+                                                        <div class="row">Recherche par mots clés</div>
                                                     </label>
-                                                    <div class="col-md-10">
-                                                        <input name="ctl0$CONTENU_PAGE$AdvancedSearch$reference" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_reference" class="form-control long">
-                                                    </div>
-
+                                                </div>
+                                                <div class="col-md-10 formulaire-inline">
+                                                    <input name="ctl0$CONTENU_PAGE$AdvancedSearch$keywordSearch" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch" class="form-control long" placeholder="Dans la référence, l'intitulé ou l'objet de la consultation">
                                                 </div>
                                             </div>
-                                            <!-- END ROW REFERENCE-->
+                                            <div class="form-group form-group-sm">
 
-                                            <!-- BEGIN ROW TYPE D'ANNONCE-->
-                                            <div class="col-md-12 m-b-1" >
-                                                <div class="row line">
-                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType">
-                                                        <div class="row">Type d'annonce</div>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$annonceType" id="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType" disabled="disabled" class="form-control long">
-                                                            <option value="0">--- Tous les types d'annonce ---</option>
-                                                            <option value="2">Annonce d'information</option>
-                                                            <option selected="selected" value="3">Annonce de consultation</option>
-                                                            <option value="4">Annonce d'attribution</option>
-                                                            <option value="8">Annonce de décision de résiliation</option>
-                                                            <option value="9">Projet d'achat</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END ROW TYPE D'ANNONCE-->
+                                                <div class="clearfix">
+                                                    <!-- BEGIN ROW REFERENCE-->
+                                                    <div class="col-md-12 m-b-1">
+                                                        <div class="row line">
+                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_reference">
+                                                                <div class="row">Référence</div>
+                                                            </label>
+                                                            <div class="col-md-10">
+                                                                <input name="ctl0$CONTENU_PAGE$AdvancedSearch$reference" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_reference" class="form-control long">
+                                                            </div>
 
-                                            <!-- BEGIN ROW TYPE PROCEDURE-->
-                                            <div class="col-md-12 m-b-1" >
-                                                <div class="row line">
-                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType">
-                                                        <div class="row">Type de procédure</div>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$procedureType" id="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType" class="form-control long">
-                                                            <option value="0">--- Tous les types de procédure ---</option>
-                                                            <option value="30">Accord-Cadre - 1 Sélection des Attributaires (obsolète)</option>
-                                                            <option value="1">Appel d'offres ouvert</option>
-                                                            <option value="2">Appel d'offres restreint</option>
-                                                            <option value="4">Concours ouvert</option>
-                                                            <option value="5">Concours restreint</option>
-                                                            <option value="7">Dialogue compétitif</option>
-                                                            <option value="8">Marché négocié</option>
-                                                            <option value="3">Procédure adaptée</option>
-                                                            <option value="15">Procédure autre</option>
-                                                            <option value="1000">Procédure concurrentielle avec négociations</option>
-                                                            <option value="33">Procédure de passation des marchés spécifiques</option>
-                                                            <option value="31">Procédure de passation des marchés subséquents</option>
-                                                            <option value="32">Système d'Acquisition Dynamique</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END ROW TYPE PROCEDURE-->
-
-                                            <!-- BEGIN ROW CATEGORIE PRINCIPALE-->
-                                            <div class="col-md-12 m-b-1">
-                                                <div class="row line">
-                                                    <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_categorie">
-                                                        <div class="row">Catégorie principale</div>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$categorie" id="ctl0_CONTENU_PAGE_AdvancedSearch_categorie" class="form-control long">
-                                                            <option value="0">--- Toutes les catégories ---</option>
-                                                            <option value="1">Travaux</option>
-                                                            <option value="2">Fournitures</option>
-                                                            <option value="3">Services</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END ROW CATEGORIE PRINCIPALE-->
-                                        </div>
-
-
-                                        <hr class="hide-agent">
-
-                                        <div class="clearfix">
-                                            <div class="col-md-12">
-                                                <div class="row line">
-                                                    <div class="hide intitule-150"><img class="float-left margin-right-5" src="https://atx2.local-trust.com/themes/images/picto-clause-sociale.gif" alt="clause sociale">
-                                                        <label>
-                                                            Dispositions sociales
-                                                        </label> :
-                                                    </div>
-                                                    <label class="control-label col-md-2 hide-agent" for="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales">
-                                                        <div class="row">
-                                                            <i class="s s-social s-18 m-r-1"></i>
-                                                            Dispositions sociales
                                                         </div>
-                                                    </label>
-                                                    <div class="col-md-10">
-                                                        <select name="ctl0$CONTENU_PAGE$AdvancedSearch$clauseSociales" id="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales" class="form-control small-150">
-                                                            <option value="0">Indifférent</option>
-                                                            <option value="1">Oui</option>
-                                                            <option value="2">Non</option>
-                                                        </select>
                                                     </div>
+                                                    <!-- END ROW REFERENCE-->
 
+                                                    <!-- BEGIN ROW TYPE D'ANNONCE-->
+                                                    <div class="col-md-12 m-b-1">
+                                                        <div class="row line">
+                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType">
+                                                                <div class="row">Type d'annonce</div>
+                                                            </label>
+                                                            <div class="col-md-10">
+                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$annonceType" id="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType" disabled="disabled" class="form-control long">
+                                                                    <option value="0">--- Tous les types d'annonce ---</option>
+                                                                    <option value="2">Annonce d'information</option>
+                                                                    <option selected="selected" value="3">Annonce de consultation</option>
+                                                                    <option value="4">Annonce d'attribution</option>
+                                                                    <option value="8">Annonce de décision de résiliation</option>
+                                                                    <option value="9">Projet d'achat</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ROW TYPE D'ANNONCE-->
+
+                                                    <!-- BEGIN ROW TYPE PROCEDURE-->
+                                                    <div class="col-md-12 m-b-1">
+                                                        <div class="row line">
+                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType">
+                                                                <div class="row">Type de procédure</div>
+                                                            </label>
+                                                            <div class="col-md-10">
+                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$procedureType" id="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType" class="form-control long">
+                                                                    <option value="0">--- Tous les types de procédure ---</option>
+                                                                    <option value="30">Accord-Cadre - 1 Sélection des Attributaires (obsolète)</option>
+                                                                    <option value="1">Appel d'offres ouvert</option>
+                                                                    <option value="2">Appel d'offres restreint</option>
+                                                                    <option value="4">Concours ouvert</option>
+                                                                    <option value="5">Concours restreint</option>
+                                                                    <option value="7">Dialogue compétitif</option>
+                                                                    <option value="8">Marché négocié</option>
+                                                                    <option value="3">Procédure adaptée</option>
+                                                                    <option value="15">Procédure autre</option>
+                                                                    <option value="1000">Procédure concurrentielle avec négociations</option>
+                                                                    <option value="33">Procédure de passation des marchés spécifiques</option>
+                                                                    <option value="31">Procédure de passation des marchés subséquents</option>
+                                                                    <option value="32">Système d'Acquisition Dynamique</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ROW TYPE PROCEDURE-->
+
+                                                    <!-- BEGIN ROW CATEGORIE PRINCIPALE-->
+                                                    <div class="col-md-12 m-b-1">
+                                                        <div class="row line">
+                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_categorie">
+                                                                <div class="row">Catégorie principale</div>
+                                                            </label>
+                                                            <div class="col-md-10">
+                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$categorie" id="ctl0_CONTENU_PAGE_AdvancedSearch_categorie" class="form-control long">
+                                                                    <option value="0">--- Toutes les catégories ---</option>
+                                                                    <option value="1">Travaux</option>
+                                                                    <option value="2">Fournitures</option>
+                                                                    <option value="3">Services</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ROW CATEGORIE PRINCIPALE-->
                                                 </div>
+
+
+                                                <hr class="hide-agent">
+
+                                                <div class="clearfix">
+                                                    <div class="col-md-12">
+                                                        <div class="row line">
+                                                            <div class="hide intitule-150"><img class="float-left margin-right-5" src="https://atx2.local-trust.com/themes/images/picto-clause-sociale.gif" alt="clause sociale">
+                                                                <label>
+                                                                    Dispositions sociales
+                                                                </label> :
+                                                            </div>
+                                                            <label class="control-label col-md-2 hide-agent" for="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales">
+                                                                <div class="row">
+                                                                    <i class="s s-social s-18 m-r-1"></i>
+                                                                    Dispositions sociales
+                                                                </div>
+                                                            </label>
+                                                            <div class="col-md-10">
+                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$clauseSociales" id="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales" class="form-control small-150">
+                                                                    <option value="0">Indifférent</option>
+                                                                    <option value="1">Oui</option>
+                                                                    <option value="2">Non</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-
                             </form>
-
 
 
                             <div class="col-xs-3">
@@ -490,7 +524,7 @@
                             <div class="h5">
                                 <strong>
                                     Nombre de résultats :
-                                    <span >29</span>
+                                    <span>29</span>
                                 </strong>
                             </div>
                         </div>
@@ -528,7 +562,7 @@
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la première page"><i class="fa fa-angle-double-left"></i></span>
                                         </span>
                                         <span>
-                                            <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page précédente" ><i class="fa fa-angle-left "></i></span>
+                                            <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page précédente"><i class="fa fa-angle-left "></i></span>
                                         </span>
                                         <a href="">
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page suivante"><i class="fa fa-angle-right"></i></span>
@@ -598,7 +632,7 @@
                                             </span>
                                         </a>
                                         <div class="pull-left">
-                                         Actions
+                                            Actions
                                         </div>
                                     </div>
                                 </div>
@@ -715,12 +749,12 @@
                                     <ul class="list-unstyled list-actions pull-left">
                                         <!-- BEGIN FAQ-->
                                         <li class="item-action">
-                                                <div class="" data-toggle="tooltip" title="FAQ">
-                                                    <a class="btn btn-primary btn-sm relative" href="#">
-                                                        <span class="sr-only">FAQ</span>
-                                                        <i class="fa fa-question fa-lg"></i>
-                                                    </a>
-                                                </div>
+                                            <div class="" data-toggle="tooltip" title="FAQ">
+                                                <a class="btn btn-primary btn-sm relative" href="#">
+                                                    <span class="sr-only">FAQ</span>
+                                                    <i class="fa fa-question fa-lg"></i>
+                                                </a>
+                                            </div>
                                         </li>
                                         <!-- END FAQ-->
                                         <li class="item">
@@ -1153,7 +1187,7 @@
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la première page"><i class="fa fa-angle-double-left"></i></span>
                                         </span>
                                         <span>
-                                            <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page précédente" ><i class="fa fa-angle-left "></i></span>
+                                            <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page précédente"><i class="fa fa-angle-left "></i></span>
                                         </span>
                                         <a href="">
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la page suivante"><i class="fa fa-angle-right"></i></span>
@@ -1181,6 +1215,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="assets/js/circle-progress.js"></script>
+<script src="assets/js/jquery.animateNumber.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

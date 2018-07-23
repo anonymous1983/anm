@@ -1,13 +1,47 @@
+.nav-wrapper {
+    height: auto;
+}
+
 .navbar.horizonatal-menu {
     border: 0;
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .navbar .navbar-logo {
     padding: 0 40px 0 20px;
 }
 
-.btn-offre-premium {
+.hero {
+    background-color: #0047b9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px;
+}
 
+.hero .hero-header .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero .hero-footer .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.125;
+    display: inline-block;
+}
+
+.hero .hero-footer .description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: inline-block;
 }
 
 .navbar .navbar-logo {
@@ -155,18 +189,16 @@
     margin-top: 12px;
 }
 
-
-.date.date-w70{
+.date.date-w70 {
     width: 70px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 .stats .stats-date .text,
 .stats .stats-date .month,
 .stats .stats-date .day,
-.stats .stats-date .year{
+.stats .stats-date .year {
     float: left;
     padding: 5px;
 }
