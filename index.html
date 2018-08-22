@@ -106,8 +106,8 @@
                         <span class="title m-b-1">
                             +<span id="numberMarchePublicFranceAnnee">0</span>
                         </span>
-                        <br>
-                        <span class="description">
+                            <br>
+                            <span class="description">
                             marchés publics en France chaque année
                         </span>
                         </div>
@@ -121,7 +121,7 @@
             <div class="clearfix">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="carousel carousel-logos slide m-b-1" id="carousellogos">
+                        <div class="carousel carousel-logos slide m-b-1" id="carousellogos" data-interval="1000">
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="row">
@@ -230,8 +230,8 @@
                                 </div><!--.item-->
 
                             </div>
-                            <a class="left carousel-control" href="#carousellogos" data-slide="prev"><i class="fa fa-2x fa-angle-left text-primary"></i></a>
-                            <a class="right carousel-control" href="#carousellogos" data-slide="next"><i class="fa fa-2x fa-angle-right text-primary"></i></a>
+                            <!--a class="left carousel-control" href="#carousellogos" data-slide="prev"><i class="fa fa-2x fa-angle-left text-primary"></i></a-->
+                            <!--a class="right carousel-control" href="#carousellogos" data-slide="next"><i class="fa fa-2x fa-angle-right text-primary"></i></a-->
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,6 @@
                 <!-- Stat -->
 
                 <div class="circles">
-
 
                     <div class="title-circle">
                         <div class="month">
@@ -253,18 +252,6 @@
                         <div class="year">
                             2018
                         </div>
-                    </div>
-
-                    <div class="circle"
-                         data-value="0.78"
-                         data-number="7862"
-                         data-size="100"
-                         data-thickness="8"
-                         data-fill="{
-                                &quot;gradient&quot;: &lsqb;&quot;#20E2D7&quot;, &quot;#F9FEA5&quot;&rsqb;
-                             }">
-                        <strong></strong>
-                        <span>Consultations <br> en cours</span>
                     </div>
 
                     <div class="circle"
@@ -291,6 +278,31 @@
                         <span>Nouveaux avis BOAMP et JOUE</span>
                     </div>
 
+                    <div class="circle"
+                         data-value="0.78"
+                         data-number="7862"
+                         data-size="100"
+                         data-thickness="8"
+                         data-fill="{
+                                &quot;gradient&quot;: &lsqb;&quot;#20E2D7&quot;, &quot;#F9FEA5&quot;&rsqb;
+                             }">
+                        <strong></strong>
+                        <span>Consultations <br> en cours</span>
+                    </div>
+
+                    <div class="list-circle">
+                        <ul class="list-unstyled">
+                            <li class="small text-primary">
+                                Atexo Place <span class="num m-l-1 animate-number" data-number="2563">563</span>
+                            </li>
+                            <li class="small text-primary">
+                                Atexo Autres <span class="num m-l-1 animate-number" data-number="1522">522</span>
+                            </li>
+                            <li class="small text-primary">
+                                Achat Public <span class="num m-l-1 animate-number" data-number="1326">1326</span>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
 
@@ -372,136 +384,6 @@
                                 </div>
 
 
-                                <div class="panel panel-default tab-pane fade in active">
-                                    <div class="panel-body ">
-                                        <div class="form-horizontal" id="advanced-search">
-                                            <div class="form-group form-group-sm hide-agent">
-                                                <div class="line formulaire-inline">
-                                                    <label class="control-label col-md-2" for="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch">
-                                                        <div class="row">Recherche par mots clés</div>
-                                                    </label>
-                                                </div>
-                                                <div class="col-md-10 formulaire-inline">
-                                                    <input name="ctl0$CONTENU_PAGE$AdvancedSearch$keywordSearch" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_keywordSearch" class="form-control long" placeholder="Dans la référence, l'intitulé ou l'objet de la consultation">
-                                                </div>
-                                            </div>
-                                            <div class="form-group form-group-sm">
-
-                                                <div class="clearfix">
-                                                    <!-- BEGIN ROW REFERENCE-->
-                                                    <div class="col-md-12 m-b-1">
-                                                        <div class="row line">
-                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_reference">
-                                                                <div class="row">Référence</div>
-                                                            </label>
-                                                            <div class="col-md-10">
-                                                                <input name="ctl0$CONTENU_PAGE$AdvancedSearch$reference" type="text" id="ctl0_CONTENU_PAGE_AdvancedSearch_reference" class="form-control long">
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <!-- END ROW REFERENCE-->
-
-                                                    <!-- BEGIN ROW TYPE D'ANNONCE-->
-                                                    <div class="col-md-12 m-b-1">
-                                                        <div class="row line">
-                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType">
-                                                                <div class="row">Type d'annonce</div>
-                                                            </label>
-                                                            <div class="col-md-10">
-                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$annonceType" id="ctl0_CONTENU_PAGE_AdvancedSearch_annonceType" disabled="disabled" class="form-control long">
-                                                                    <option value="0">--- Tous les types d'annonce ---</option>
-                                                                    <option value="2">Annonce d'information</option>
-                                                                    <option selected="selected" value="3">Annonce de consultation</option>
-                                                                    <option value="4">Annonce d'attribution</option>
-                                                                    <option value="8">Annonce de décision de résiliation</option>
-                                                                    <option value="9">Projet d'achat</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END ROW TYPE D'ANNONCE-->
-
-                                                    <!-- BEGIN ROW TYPE PROCEDURE-->
-                                                    <div class="col-md-12 m-b-1">
-                                                        <div class="row line">
-                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType">
-                                                                <div class="row">Type de procédure</div>
-                                                            </label>
-                                                            <div class="col-md-10">
-                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$procedureType" id="ctl0_CONTENU_PAGE_AdvancedSearch_procedureType" class="form-control long">
-                                                                    <option value="0">--- Tous les types de procédure ---</option>
-                                                                    <option value="30">Accord-Cadre - 1 Sélection des Attributaires (obsolète)</option>
-                                                                    <option value="1">Appel d'offres ouvert</option>
-                                                                    <option value="2">Appel d'offres restreint</option>
-                                                                    <option value="4">Concours ouvert</option>
-                                                                    <option value="5">Concours restreint</option>
-                                                                    <option value="7">Dialogue compétitif</option>
-                                                                    <option value="8">Marché négocié</option>
-                                                                    <option value="3">Procédure adaptée</option>
-                                                                    <option value="15">Procédure autre</option>
-                                                                    <option value="1000">Procédure concurrentielle avec négociations</option>
-                                                                    <option value="33">Procédure de passation des marchés spécifiques</option>
-                                                                    <option value="31">Procédure de passation des marchés subséquents</option>
-                                                                    <option value="32">Système d'Acquisition Dynamique</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END ROW TYPE PROCEDURE-->
-
-                                                    <!-- BEGIN ROW CATEGORIE PRINCIPALE-->
-                                                    <div class="col-md-12 m-b-1">
-                                                        <div class="row line">
-                                                            <label class="control-label col-md-2 intitule-150" for="ctl0_CONTENU_PAGE_AdvancedSearch_categorie">
-                                                                <div class="row">Catégorie principale</div>
-                                                            </label>
-                                                            <div class="col-md-10">
-                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$categorie" id="ctl0_CONTENU_PAGE_AdvancedSearch_categorie" class="form-control long">
-                                                                    <option value="0">--- Toutes les catégories ---</option>
-                                                                    <option value="1">Travaux</option>
-                                                                    <option value="2">Fournitures</option>
-                                                                    <option value="3">Services</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END ROW CATEGORIE PRINCIPALE-->
-                                                </div>
-
-
-                                                <hr class="hide-agent">
-
-                                                <div class="clearfix">
-                                                    <div class="col-md-12">
-                                                        <div class="row line">
-                                                            <div class="hide intitule-150"><img class="float-left margin-right-5" src="https://atx2.local-trust.com/themes/images/picto-clause-sociale.gif" alt="clause sociale">
-                                                                <label>
-                                                                    Dispositions sociales
-                                                                </label> :
-                                                            </div>
-                                                            <label class="control-label col-md-2 hide-agent" for="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales">
-                                                                <div class="row">
-                                                                    <i class="s s-social s-18 m-r-1"></i>
-                                                                    Dispositions sociales
-                                                                </div>
-                                                            </label>
-                                                            <div class="col-md-10">
-                                                                <select name="ctl0$CONTENU_PAGE$AdvancedSearch$clauseSociales" id="ctl0_CONTENU_PAGE_AdvancedSearch_clauseSociales" class="form-control small-150">
-                                                                    <option value="0">Indifférent</option>
-                                                                    <option value="1">Oui</option>
-                                                                    <option value="2">Non</option>
-                                                                </select>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
 
 
@@ -544,20 +426,20 @@
                                 <label class="sr-only">
                                     Aller à la page
                                 </label>
-                                <div id="ctl0_CONTENU_PAGE_resultSearch_panelBouttonGotoPageTop" class="float-left">
-                                    <label for="ctl0_CONTENU_PAGE_resultSearch_numPageTop" class="m-l-1 m-r-1">
+                                <div id="" class="float-left">
+                                    <label for="" class="m-l-1 m-r-1">
                                         résultats / page
                                     </label>
-                                    <input name="ctl0$CONTENU_PAGE$resultSearch$numPageTop" type="text" value="1" id="ctl0_CONTENU_PAGE_resultSearch_numPageTop" class="form-control w-50 text-center">
+                                    <input name="ctl0$CONTENU_PAGE$resultSearch$numPageTop" type="text" value="1" id="" class="form-control w-50 text-center">
                                     <label class="nb-total ">/
-                                        <span id="ctl0_CONTENU_PAGE_resultSearch_nombrePageTop">3</span>
+                                        <span id="">3</span>
                                     </label>
-                                    <input type="submit" name="ctl0$CONTENU_PAGE$resultSearch$DefaultButtonTop" value="" id="ctl0_CONTENU_PAGE_resultSearch_DefaultButtonTop" style="display:none">
+                                    <input type="submit" name="ctl0$CONTENU_PAGE$resultSearch$DefaultButtonTop" value="" id="" style="display:none">
                                 </div>
                             </div>
                             <div class="form-group liens pagination-section-arrows">
                                 <label class="m-l-1">
-                                    <span id="ctl0_CONTENU_PAGE_resultSearch_PagerTop">
+                                    <span id="">
                                         <span>
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la première page"><i class="fa fa-angle-double-left"></i></span>
                                         </span>
@@ -749,16 +631,37 @@
                                     <ul class="list-unstyled list-actions pull-left">
                                         <!-- BEGIN FAQ-->
                                         <li class="item-action">
-                                            <div class="" data-toggle="tooltip" title="FAQ">
+                                            <div class="" data-toggle="tooltip" title="Favoris">
                                                 <a class="btn btn-primary btn-sm relative" href="#">
-                                                    <span class="sr-only">FAQ</span>
-                                                    <i class="fa fa-question fa-lg"></i>
+                                                    <span class="sr-only">Favorit</span>
+                                                    <i class="fa fa-star fa-lg"></i>
                                                 </a>
                                             </div>
                                         </li>
                                         <!-- END FAQ-->
                                         <li class="item">
                                             <img src="media/logo/thumb/achat_public.png" class="img-thumbnail" width="32px" data-toggle="tooltip" title="achatpublic.com">
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-unstyled list-actions pull-left  m-l-1">
+                                        <!-- BEGIN FAQ-->
+                                        <li class="item-action">
+                                            <div class="" data-toggle="tooltip" title="Accéder à la consultation">
+                                                <a class="btn btn-primary btn-sm relative" href="#">
+                                                    <span class="sr-only">Accéder à la consultation</span>
+                                                    <i class="fa fa-sign-in fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <!-- END FAQ-->
+                                        <li class="item">
+                                            <div class="" data-toggle="tooltip" title="Documents DSE">
+                                                <a class="btn btn-primary btn-sm relative" href="#modalDSE" data-toggle="modal" data-toggle="modal">
+                                                    <span class="sr-only">Documents DSE</span>
+                                                    <i class="fa fa-files-o fa-lg"></i>
+                                                </a>
+                                            </div>
                                         </li>
 
                                     </ul>
@@ -877,16 +780,37 @@
                                     <ul class="list-unstyled list-actions pull-left">
                                         <!-- BEGIN FAQ-->
                                         <li class="item-action">
-                                            <div class="" data-toggle="tooltip" title="FAQ">
+                                            <div class="" data-toggle="tooltip" title="Favoris">
                                                 <a class="btn btn-primary btn-sm relative" href="#">
-                                                    <span class="sr-only">FAQ</span>
-                                                    <i class="fa fa-question fa-lg"></i>
+                                                    <span class="sr-only">Favorit</span>
+                                                    <i class="fa fa-star-o fa-lg"></i>
                                                 </a>
                                             </div>
                                         </li>
                                         <!-- END FAQ-->
                                         <li class="item">
                                             <img src="media/logo/thumb/achat_public.png" class="img-thumbnail" width="32px" data-toggle="tooltip" title="achatpublic.com">
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-unstyled list-actions pull-left  m-l-1">
+                                        <!-- BEGIN FAQ-->
+                                        <li class="item-action">
+                                            <div class="" data-toggle="tooltip" title="Accéder à la consultation">
+                                                <a class="btn btn-primary btn-sm relative" href="#">
+                                                    <span class="sr-only">Accéder à la consultation</span>
+                                                    <i class="fa fa-sign-in fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <!-- END FAQ-->
+                                        <li class="item">
+                                            <div class="" data-toggle="tooltip" title="Documents DSE">
+                                                <a class="btn btn-primary btn-sm relative" href="#modalDSE" data-toggle="modal" data-toggle="modal">
+                                                    <span class="sr-only">Documents DSE</span>
+                                                    <i class="fa fa-files-o fa-lg"></i>
+                                                </a>
+                                            </div>
                                         </li>
 
                                     </ul>
@@ -1005,16 +929,37 @@
                                     <ul class="list-unstyled list-actions pull-left">
                                         <!-- BEGIN FAQ-->
                                         <li class="item-action">
-                                            <div class="" data-toggle="tooltip" title="FAQ">
+                                            <div class="" data-toggle="tooltip" title="Favoris">
                                                 <a class="btn btn-primary btn-sm relative" href="#">
-                                                    <span class="sr-only">FAQ</span>
-                                                    <i class="fa fa-question fa-lg"></i>
+                                                    <span class="sr-only">Favorit</span>
+                                                    <i class="fa fa-star fa-lg"></i>
                                                 </a>
                                             </div>
                                         </li>
                                         <!-- END FAQ-->
                                         <li class="item">
                                             <img src="media/logo/thumb/achat_public.png" class="img-thumbnail" width="32px" data-toggle="tooltip" title="achatpublic.com">
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-unstyled list-actions pull-left  m-l-1">
+                                        <!-- BEGIN FAQ-->
+                                        <li class="item-action">
+                                            <div class="" data-toggle="tooltip" title="Accéder à la consultation">
+                                                <a class="btn btn-primary btn-sm relative" href="#">
+                                                    <span class="sr-only">Accéder à la consultation</span>
+                                                    <i class="fa fa-sign-in fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <!-- END FAQ-->
+                                        <li class="item">
+                                            <div class="" data-toggle="tooltip" title="Documents DSE">
+                                                <a class="btn btn-primary btn-sm relative" href="#modalDSE" data-toggle="modal" data-toggle="modal">
+                                                    <span class="sr-only">Documents DSE</span>
+                                                    <i class="fa fa-files-o fa-lg"></i>
+                                                </a>
+                                            </div>
                                         </li>
 
                                     </ul>
@@ -1133,10 +1078,10 @@
                                     <ul class="list-unstyled list-actions pull-left">
                                         <!-- BEGIN FAQ-->
                                         <li class="item-action">
-                                            <div class="" data-toggle="tooltip" title="FAQ">
+                                            <div class="" data-toggle="tooltip" title="Favoris">
                                                 <a class="btn btn-primary btn-sm relative" href="#">
-                                                    <span class="sr-only">FAQ</span>
-                                                    <i class="fa fa-question fa-lg"></i>
+                                                    <span class="sr-only">Favorit</span>
+                                                    <i class="fa fa-star fa-lg"></i>
                                                 </a>
                                             </div>
                                         </li>
@@ -1146,10 +1091,32 @@
                                         </li>
 
                                     </ul>
+                                    <ul class="list-unstyled list-actions pull-left  m-l-1">
+                                        <!-- BEGIN FAQ-->
+                                        <li class="item-action">
+                                            <div class="" data-toggle="tooltip" title="Accéder à la consultation">
+                                                <a class="btn btn-primary btn-sm relative" href="#">
+                                                    <span class="sr-only">Accéder à la consultation</span>
+                                                    <i class="fa fa-sign-in fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <!-- END FAQ-->
+                                        <li class="item">
+                                            <div class="" data-toggle="tooltip" title="Documents DSE">
+                                                <a class="btn btn-primary btn-sm relative" href="#modalDSE" data-toggle="modal" data-toggle="modal">
+                                                    <span class="sr-only">Documents DSE</span>
+                                                    <i class="fa fa-files-o fa-lg"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- End Row -->
+
 
 
                     </div>
@@ -1169,20 +1136,20 @@
                                 <label class="sr-only">
                                     Aller à la page
                                 </label>
-                                <div id="ctl0_CONTENU_PAGE_resultSearch_panelBouttonGotoPageTop" class="float-left">
-                                    <label for="ctl0_CONTENU_PAGE_resultSearch_numPageTop" class="m-l-1 m-r-1">
+                                <div id="" class="float-left">
+                                    <label for="" class="m-l-1 m-r-1">
                                         résultats / page
                                     </label>
-                                    <input name="ctl0$CONTENU_PAGE$resultSearch$numPageTop" type="text" value="1" id="ctl0_CONTENU_PAGE_resultSearch_numPageTop" class="form-control w-50 text-center">
+                                    <input name="ctl0$CONTENU_PAGE$resultSearch$numPageTop" type="text" value="1" id="" class="form-control w-50 text-center">
                                     <label class="nb-total ">/
-                                        <span id="ctl0_CONTENU_PAGE_resultSearch_nombrePageTop">3</span>
+                                        <span id="">3</span>
                                     </label>
-                                    <input type="submit" name="ctl0$CONTENU_PAGE$resultSearch$DefaultButtonTop" value="" id="ctl0_CONTENU_PAGE_resultSearch_DefaultButtonTop" style="display:none">
+                                    <input type="submit" name="ctl0$CONTENU_PAGE$resultSearch$DefaultButtonTop" value="" id="" style="display:none">
                                 </div>
                             </div>
                             <div class="form-group liens pagination-section-arrows">
                                 <label class="m-l-1">
-                                    <span id="ctl0_CONTENU_PAGE_resultSearch_PagerTop">
+                                    <span id="">
                                         <span>
                                             <span class="btn" data-toggle="tooltip" data-placement="top" title="Aller à la première page"><i class="fa fa-angle-double-left"></i></span>
                                         </span>
@@ -1209,6 +1176,43 @@
 </div>
 
 
+<div class="modal fade modal-DSE" tabindex="-1" role="dialog" aria-labelledby="modalDSE" id="modalDSE">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Documents DSE</h4>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Liste des procédures
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-file-pdf-o m-r-2"></i>
+                        La procédure de demande de bourse et de logement_v1.6_newlook.pdf
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-file-word-o m-r-2"></i>
+                        La procédure de logement_v1.6_newlook.docx
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-file-excel-o m-r-2"></i>
+                        La procédure de demande de bourse_v1.6_newlook.xlsx
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-file-pdf-o m-r-2"></i>
+                        La procédure de demande de bourse et de logement_v1.6_newlook.pdf
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1216,6 +1220,7 @@
 
 <script src="assets/js/circle-progress.js"></script>
 <script src="assets/js/jquery.animateNumber.js"></script>
+<script src="assets/js/jquery.number.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

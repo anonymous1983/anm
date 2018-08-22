@@ -83,6 +83,7 @@
 
 .carousel-logos .thumbnail {
     margin-bottom: 0;
+    border: 0;
 }
 
 .carousel-logos .thumbnail img {
@@ -154,6 +155,17 @@
     font-size: 13px;
 }
 
+
+.circles .list-circle {
+    position: absolute;
+    left: 402px;
+    top: 20px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 6;
+    width: 260px;
+}
+
 .circles .circle {
     width: 112px;
     margin: 6px 10px 20px;
@@ -174,7 +186,7 @@
     width: 100%;
     text-align: center;
     line-height: 40px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .circles .circle strong i {
